@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*/
+body {
+	/*background: #0e162e;*/
+
+	
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
+	
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 76em;
+	margin: 1.25em auto;
+	display: grid;
+	grid-gap: 0.625em;
+    grid-template-areas: "header       header"
+						 "contenido-2 sidebar"
+						 "footer       footer";
+}
+
+.contenedor {
+	
+	width: 90%;
+	max-width: 62.5em;
+	margin: 1.25em auto;
+	display: grid;
+	box-sizing: border-box;
+
+    
+}
+
+.contenedor .contenido-2 {
+	/*background: #adb7ce;*/
+	/*background: #fAA43D;*/
+	background: #ffffff;
+	font-size: 2im;
+	
+}
+.p{
+	font-size:50px;
+	position: relative;
+	bottom: -38px;
+}
+.g{
+	text-align: right;
+}
+.pie{
+	background: rgb(114, 114, 198);
+}
+.h2{
+	text-align: center;
+}
+
+
+/*----------Contenedores------------------------------------------------------*/
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido-2,
+.contenedor .sidebar,
+.contenedor .footer {
+	/*background:url('img/foto_6.gif ') ;*/
+	padding: 1.25em;
+	box-sizing: border-box;
+    /*color: rgb(147, 147, 180);*/
+	
+	
+}
+/*----------Header------------------------------------------------------*/
+
+.audio{
+	text-align: center;
+}
+
+.contenedor .header {
+	background: #12203E;
+	color: #fff;
+    grid-column-start: 1;
+	grid-column-end: -1;
+	text-align: center;
+}
+
+/*----------Sidebar------------------------------------------------------*/
+
+.contenedor .sidebar {
+
+	/*background:url('img/foto_9.gif');*/
+	background: #fff;
+	grid-column: span 1;
+	font-size: 2im;
+
+
+}
+
+h3 {
+
+	color: rgb(127, 114, 177);
+	
+
+}
+h4 {
+
+	color: rgb(168, 160, 204);
+	
+
+}
+
+/*----------Footer------------------------------------------------------*/
+
+    .contenedor .footer {
+		background: #12203E;
+		color: #fff;
+		grid-column: footer;
+		text-align-last: center;
+}
+
+/*----------Media Queries------------------------------------------------------*/
+
+@media screen and (max-width: 1200px){
+	body {
+		background: black;
+        /*background: rgb(57, 50, 88);*/
+		font-size: 14px;
+
+	}
+}
+
+@media screen and (max-width: 992px){
+        .contenedor .contenido-2 {
+			grid-column: 1/-1;
+			
+		}
+		.contenedor .sidebar {
+			grid-column: 1/-1;
+		}
+	}
+	
+		
